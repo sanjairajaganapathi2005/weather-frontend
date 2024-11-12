@@ -7,6 +7,8 @@ import search from "./assets/search.png";
 import location from "./assets/location.png";
 import loadingimg from "./assets/loading.gif";
 import { useNavigate } from "react-router-dom";
+const apiurl=process.env.REACT_APP;
+
 
 const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
 
@@ -33,7 +35,7 @@ const Weatherapp = () => {
       const userId = getUserIdFromToken();
       if (!userId) return;
 
-      const response = await axios.get(`http://localhost:5000/getWeatherData/${userId}`);
+      const response = await axios.get(`${apiurl}/getWeatherData/${userId}`);
       setWeatherData(response.data);
       setLoader(false);
     } catch (err) {
@@ -62,7 +64,7 @@ const Weatherapp = () => {
   const handleDelete = async (user_id, timestamp) => {
     try {
       // Send DELETE request to the backend to delete the data
-      await axios.delete(`http://localhost:5000/deleteWeatherData/${user_id}/${timestamp}`);
+      await axios.delete(`${apiurl}/deleteWeatherData/${user_id}/${timestamp}`);
       // Update state to remove the deleted item
       setWeatherData(weatherData.filter(item => item.timestamp !== timestamp));
     } catch (err) {
@@ -105,7 +107,7 @@ const Weatherapp = () => {
 
       const userId = getUserIdFromToken();
       if (userId) {
-        await axios.post("http://localhost:5000/saveWeatherData", {
+        await axios.post(`${apiurl}/saveWeatherData`, {
           user_id: userId,
           ...response.data,
         });
