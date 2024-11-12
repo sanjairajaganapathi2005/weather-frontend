@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './register.css';  // Import CSS here
+const apiurl=process.env.REACT_APP;
 
 export default function Register() {
   const [username, setUsername]=useState("");
@@ -13,7 +14,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', { username,email, password });
+      const response = await axios.post(`${apiurl}/auth/register`, { username,email, password });
 
       if (response.data.status === "ok") {
         alert("Registration Successful");
