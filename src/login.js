@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from 'axios';
 import './login.css';
+const apiurl=process.env.REACT_APP;
 
 export default function Login() {
   const [user, setUser] = useState("");
@@ -12,7 +13,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', { 
+      const response = await axios.post(`${apiurl}/auth/login`, { 
         username: user,  // Ensure 'username' matches backend key
         password 
       });
