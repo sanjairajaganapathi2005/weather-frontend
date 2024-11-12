@@ -1,0 +1,107 @@
+/* Login.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('cloud.jpg'); /* Add an appropriate image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-wrapper {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .login-inner {
+    color: #fff; /* Text color */
+  }
+  
+  .login-inner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #f8f9fa;
+  }
+  
+  .login-form label {
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased label font size */
+    color: #f8c471; /* Vibrant color for labels */
+    display: block;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .login-form input[type="text"]::placeholder,
+  .login-form input[type="password"]::placeholder {
+    color: #d9d9d9;
+  }
+  
+  .login-form button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #141a20;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background: #0f171f;
+  }
+  
+  .register-link {
+    margin-top: 1.5rem;
+  }
+  
+  .register-link p {
+    font-size: 1rem;
+    color: #f9f9f9;
+  }
+  
+  .register-text {
+    color: #ff6b6b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .register-text:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  

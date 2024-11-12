@@ -1,0 +1,117 @@
+/* Register.css */
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image: url('cloud.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+  form label {
+    font-weight: bold;
+    font-size: 1.2rem;  /* Increased label font size */
+    color: #f8c471;  /* Vibrant color for labels */
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+    
+  }
+  form {
+    width: 150%;
+    align-items: center;
+  }
+
+  .register-wrapper button {
+    padding: 0.4rem 0.5rem;
+    border: 3;
+    max-width: 8rem;
+    width: 150px;
+    border-radius: 0.8rem;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 2px 5px rgba(238, 39, 39, 0.3); /* Shadow effect */
+      color: #fff; /* Text color */
+  }
+
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(250, 249, 249, 0.979);
+    color: #1b1a1a;
+    font-size: 1rem;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #d9d9d9;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #0a0c0e;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .h2{
+    font-size: 100px;
+    margin-bottom: 150px;
+  }
+  button:hover {
+    background: #357ABD;
+  }
+  
+  .register-link {
+    margin-top: 1.5rem;
+  }
+  
+  .register-link p {
+    font-size: 0.9rem;
+  }
+  
+  .register-text {
+    color: #ff6b6b;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .register-text:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
