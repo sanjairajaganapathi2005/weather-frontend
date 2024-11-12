@@ -51,7 +51,7 @@ const Weatherapp = () => {
       console.log(response.data); // Print weather data in cmd
   
       // Send the weather data to Node.js backend for saving to .txt and MongoDB
-      await axios.post("http://localhost:5000/saveWeatherData", response.data);
+      // await axios.post("http://localhost:5000/saveWeatherData", response.data);
     } catch (err) {
       console.error(err);
     }
@@ -68,7 +68,7 @@ const Weatherapp = () => {
       console.log(response.data); // Print weather data in cmd
   
       // Send the weather data to Node.js backend for saving to .txt and MongoDB
-      await axios.post("http://localhost:5000/saveWeatherData", response.data);
+      //await axios.post("http://localhost:5000/saveWeatherData", response.data);
     } catch (err) {
       console.error(err);
     }
